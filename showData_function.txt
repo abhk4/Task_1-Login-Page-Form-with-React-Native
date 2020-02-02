@@ -1,0 +1,7 @@
+showData = async()=>{
+    let loginDetails = await AsyncStorage.getItem('loginDetails');
+    let ld = JSON.parse(loginDetails);
+    alert('email: '+ ld.email + ' ' + 'password: ' + ld.password);
+}
+
+				

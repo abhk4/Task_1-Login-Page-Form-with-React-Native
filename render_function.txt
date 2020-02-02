@@ -1,0 +1,28 @@
+render() {
+        return(
+            <View style={styles.container}>
+                <TextInput style={styles.inputBox}
+                onChangeText={(email) => this.setState({email})}
+                underlineColorAndroid='rgba(0,0,0,0)' 
+                placeholder="Email"
+                placeholderTextColor = "#002f6c"
+                selectionColor="#fff"
+                keyboardType="email-address"
+                onSubmitEditing={()=> this.password.focus()}/>
+                
+                <TextInput style={styles.inputBox}
+                onChangeText={(password) => this.setState({password})} 
+                underlineColorAndroid='rgba(0,0,0,0)' 
+                placeholder="Password"
+                secureTextEntry={true}
+                placeholderTextColor = "#002f6c"
+                ref={(input) => this.password = input}
+                />
+ 
+                <TouchableOpacity style={styles.button}> 
+                    <Text style={styles.buttonText} onPress={this.saveData}>{this.props.type}</Text>
+                </TouchableOpacity>
+            </View>
+            
+        )
+}
