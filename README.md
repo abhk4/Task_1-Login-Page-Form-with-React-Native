@@ -40,9 +40,13 @@ export default class Form extends Component {
 }
 
 7.Create saveData function in Form
+
 8.Create showData function to show (registered email and password).
+
 9.Add render() function in the form.(To determine if the user click Sign up or Login button.
+
 10.Add CSS Style.
+
 11.Comple the Form Activity.
 
 
